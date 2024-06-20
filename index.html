@@ -20,7 +20,9 @@
       }
     }
 
-    .animate-marquee {animation: marquee 20s linear infinite;}
+    .animate-marquee {
+      animation: marquee 20s linear infinite;
+    }
   </style>
 </head>
 
@@ -67,15 +69,15 @@
       </nav>
     </div>
   </header>
-
+<!-- hero section -->
   <section
-    class="flex lg:w-full w-[520px]  items-center -mt-8 justify-center min-h-screen lg:w-[100%]  sm:pt-20 lg:pt-24">
+    class="relative flex mx-0 xl:w-[100%] lg:w-[100%] md:w-[100%] w-[580px] items-center justify-center min-h-screen">
+    <img src="tailwind-images/banner-bg-1.png" alt="bg" class="opacity-50 absolute top-0 right-0 left-0 lg:w-screen xl:w-screen md:w-screen xs:w-screen h-full
+     object-cover ">
 
-    <div
-      class="lg:w-screen relative xl:pt-[120px] xl:pb-[52px] lg:pt-[120px] lg:pb-[50px] sm:pt-[80px] pt-[60px] pb-[60px]">
-      <img src="tailwind-images/banner-bg-1.png" alt="bg" class="opacity-80 absolute left-0 top-0 bottom-0 right-0 lg:w-[100%] w-[520px] h-full
-       object-cover ">
-      <div class="lg:px-12 lg:mx-0 mx-6 lg:py-10 py-5 px-6 sm:py-9 sm:px-10 lg:w-[800px] w-[400px] relative lg:h-auto h-[600px] bg-white rounded-xl lg:rounded-[20px] lg:mx-8  
+    <!-- <div class=" relative xl:pt-[120px] xl:pb-[52px] lg:pt-[120px] lg:pb-[50px] sm:pt-[80px] pt-[60px] pb-[60px]"> -->
+      <div class="lg:px-12 lg:mx-0 mx-6 lg:py-10 py-5 px-6 sm:py-9 sm:px-10 lg:w-[800px] w-[400px] relative lg:h-auto h-[650px] bg-white rounded-xl lg:rounded-[20px]
+       lg:mx-8  
       ">
 
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">QA as a Service, Effective &amp; Simple
@@ -97,11 +99,11 @@
 
 
 
-    </div>
+    <!-- </div> -->
   </section>
   <!-- FEATURES -->
   <div class="">
-    <div class="mx-6 overflow-hidden w-auto px-6 lg:px-8 mt-8 sm:mt-20">
+    <div class="mx-6 xl:w-[95%] lg:w-[100%] md:w-[100%] w-[510px] overflow-hidden  px-6 lg:px-8 mt-8 sm:mt-20">
       <div class="lg:text-center">
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What We Can Bring To Your Business
         </p>
@@ -184,8 +186,8 @@
 
   <!-- STATS -->
 
-  <div class="bg-[#f79a6b] lg:w-screen w-[520px] lg:h-[350px] py-10 sm:py-32">
-    <div class="lg:mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="bg-[#f79a6b]  xl:w-[100%] lg:w-[100%] md:w-[100%] w-[560px] lg:h-[350px] py-10 sm:py-32">
+    <div class="px-6 lg:px-8">
       <p class="text-4xl text-white text-center lg:-mt-20 -mt-8 mb-10 font-bold tracking-tight sm:text-2xl">Key metrics
         that define our success</p>
       <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-16 text-center lg:grid-cols-4">
@@ -212,163 +214,160 @@
       </dl>
     </div>
   </div>
-
-  <!-- PRICING< -->
-    <div class="mx-[10px] lg:w-screen px-6 lg:px-8">
-      <section id="better_health_section" class="pt-10 lg:pt-12 pb-sm-10 lg:pb-12">
-        <div class="max-w-6xl container mx-auto">
-          <div class="">
-            <div class="flex items-center flex-col lg:flex-row lg:gap-x-16 gap-y-8 sm:gap-y-12">
-              <div class="flex flex-col justify-center lg:gap-8 sm:gap-6 gap-4 basis-full lg:basis-1/2">
-                <div data-aos="fade-up-right" class="mx-auto max-w-4xl sm:text-center">
-                  <h2 class="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple, Transparent
-                    Pricing for Comprehensive QA Services</h2>
-                  <p class="text-justify mt-6 text-lg leading-8 text-gray-600">Experience the ease of our all-in-one QA
-                    service plan, designed to cover all your software testing needs at a fixed monthly rate. With no
-                    hidden fees and straightforward terms, our single package ensures your software achieves the highest
-                    standards of quality and reliability. Ideal for MVPs and startups, our plan is crafted to provide
-                    thorough, ongoing testing solutions that grow with your project. Trust us to safeguard your
-                    software's performance, allowing you to focus on innovation and growth.</p>
-                </div>
+  <!-- PRICING -->
+  <div class="mx-6 xl:w-[95%] lg:w-[90%] md:w-[90%] w-[460px]  px-6 lg:px-8">
+    <section id="better_health_section" class="pt-10 lg:pt-12 pb-sm-10 lg:pb-12">
+      <div class=" container mx-auto">
+        <div class="">
+          <div class="flex items-center flex-col lg:flex-row lg:gap-x-16 gap-y-8 sm:gap-y-12">
+            <div class="flex flex-col justify-center  lg:gap-8 sm:gap-6 gap-4 w-full lg:w-[50%]">
+              <div data-aos="fade-up-right" class="mx-auto max-w-4xl sm:text-center">
+                <h2 class="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple, Transparent
+                  Pricing for Comprehensive QA Services</h2>
+                <p class="text-justify mt-6 text-lg leading-8 text-gray-600">Experience the ease of our all-in-one QA
+                  service plan, designed to cover all your software testing needs at a fixed monthly rate. With no
+                  hidden fees and straightforward terms, our single package ensures your software achieves the highest
+                  standards of quality and reliability. Ideal for MVPs and startups, our plan is crafted to provide
+                  thorough, ongoing testing solutions that grow with your project. Trust us to safeguard your
+                  software's performance, allowing you to focus on innovation and growth.</p>
               </div>
-              <div class="basis-full lg:basis-1/2">
-                <img data-aos="fade-up-left" src="https://tisf.com/wp-content/uploads/2023/03/n1.jpeg" class="lg:w-full w-[520px] lg:h-[350px] lg:rounded-[32px] 
+            </div>
+            <div class="w-[100%] lg:w-1/2">
+              <img data-aos="fade-up-left" src="https://tisf.com/wp-content/uploads/2023/03/n1.jpeg" class="w-full lg:rounded-[32px] 
                     sm:rounded-[20] rounded-xl opacity-70">
-              </div>
+            </div>
 
-            </div>
           </div>
         </div>
-      </section>
       </div>
-      <!-- TRUSTED BY -->
-      <div class="bg-[#f79a6b] lg:w-full w-[480px] lg:mt-2 mt-10 rounded-md h-[300px] ">
-        <div class="py-24 sm:py-32">
-          <div class="px-6 lg:px-8">
-            <h2 class="text-center -mt-10 text-lg font-bold leading-8 text-white">Trusted by the world’s most innovative
-              teams</h2>
-            <div class="overflow-hidden relative mt-8">
-              <div class="flex w-full space-x-8 lg:space-x-20 animate-marquee">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor"
-                  width="158" height="48">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158"
-                  height="48">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158"
-                  height="48">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158"
-                  height="48">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158"
-                  height="48">
-                <!-- Duplicate the logos for seamless animation -->
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor"
-                  width="158" height="48">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158"
-                  height="48">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158"
-                  height="48">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158"
-                  height="48">
-                <img class="filter invert max-h-12 w-auto object-contain"
-                  src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158"
-                  height="48">
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- MVPs -->
-      <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-        <div class="p-8 sm:p-10 lg:flex-auto">
-          <h3 class="text-2xl font-bold tracking-tight text-gray-900">Ideal for MVPs and startups</h3>
-          <p class="mt-6 text-base leading-7 text-gray-600">As you iterate and enhance your product, we ensure that new
-            updates integrate seamlessly without disrupting existing functionalities. Our focused approach prevents bugs
-            from reaching your users, maintaining the integrity and user experience of your application</p>
-          <div class="mt-10 flex items-center gap-x-4">
-            <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
-            <div class="h-px flex-auto bg-gray-100"></div>
-          </div>
-          <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Meetings with our QA Leads to understand your product and identify what are the main features of your
-              product that need to be covered
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Implementation our QA process on your product and team, using the best market practices
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Test cases documentation, and support documentation
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clip-rule="evenodd" />
-              </svg>
-              Detailed test execution reports, to be used by your team, for quick fixing and improving
-            </li>
-          </ul>
-          <div class="py-10">
-            <h3 class="text-2xl font-bold tracking-tight text-gray-900">Bigger project with complex features?</h3>
-            <p class="mt-6 text-base leading-7 text-gray-600">Don't worry we can adjust our standard offer just for you!
-            </p>
-          </div>
-        </div>
-        <div class="mt-20  p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-          <div class="lg:mt-20 -mt-20 rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-900/3 border-gray-900 lg:flex lg:flex-col
-           lg:justify-center lg:py-32">
-            <div class="mx-auto max-w-xs px-8">
-              <p class="text-base font-semibold text-gray-600">Per Month</p>
-              <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                <span class="text-5xl font-bold tracking-tight text-gray-900">$1499</span>
-                <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
-              </p>
-              <a href="#" class="mt-10 block w-full rounded-md bg-[#f1580c] px-3 py-2 text-center text-sm font-semibold 
-              text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
-               focus-visible:outline-indigo-600">Contact Us</a>
-              <p class="mt-6 text-xs leading-5 text-gray-600">Cancel at anytime</p>
-            </div>
+    </section>
+  </div>
+  <!-- TRUSTED BY -->
+  <div class="bg-[#f79a6b]  xl:w-[100%] lg:w-[100%] md:w-[100%] w-[520px] lg:mt-2 mt-10 h-[300px] ">
+    <div class="py-24 sm:py-32">
+      <div class="px-6 lg:px-8">
+        <h2 class="text-center -mt-10 text-lg font-bold leading-8 text-white">Trusted by the world’s most innovative
+          teams</h2>
+        <div class="overflow-hidden relative mt-8">
+          <div class="flex w-full space-x-8 lg:space-x-20 animate-marquee">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158"
+              height="48">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158"
+              height="48">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158"
+              height="48">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158"
+              height="48">
+            <!-- Duplicate the logos for seamless animation -->
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158"
+              height="48">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158"
+              height="48">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158"
+              height="48">
+            <img class="filter invert max-h-12 w-auto object-contain"
+              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158"
+              height="48">
           </div>
         </div>
       </div>
     </div>
+
+  </div>
+  <!-- MVPs -->
+  <div class="mx-6 xl:w-[98%] lg:w-[100%] md:w-[93%] w-[460px] mt-16  rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:flex ">
+    <div class="p-8 sm:p-10 lg:flex-auto">
+      <h3 class="text-2xl font-bold tracking-tight text-gray-900">Ideal for MVPs and startups</h3>
+      <p class="mt-6 text-base leading-7 text-gray-600">As you iterate and enhance your product, we ensure that new
+        updates integrate seamlessly without disrupting existing functionalities. Our focused approach prevents bugs
+        from reaching your users, maintaining the integrity and user experience of your application</p>
+      <div class="mt-10 flex items-center gap-x-4">
+        <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">What’s included</h4>
+        <div class="h-px flex-auto bg-gray-100"></div>
+      </div>
+      <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+        <li class="flex gap-x-3">
+          <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+              clip-rule="evenodd" />
+          </svg>
+          Meetings with our QA Leads to understand your product and identify what are the main features of your
+          product that need to be covered
+        </li>
+        <li class="flex gap-x-3">
+          <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+              clip-rule="evenodd" />
+          </svg>
+          Implementation our QA process on your product and team, using the best market practices
+        </li>
+        <li class="flex gap-x-3">
+          <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+              clip-rule="evenodd" />
+          </svg>
+          Test cases documentation, and support documentation
+        </li>
+        <li class="flex gap-x-3">
+          <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+              clip-rule="evenodd" />
+          </svg>
+          Detailed test execution reports, to be used by your team, for quick fixing and improving
+        </li>
+      </ul>
+      <div class="py-10">
+        <h3 class="text-2xl font-bold tracking-tight text-gray-900">Bigger project with complex features?</h3>
+        <p class="mt-6 text-base leading-7 text-gray-600">Don't worry we can adjust our standard offer just for you!
+        </p>
+      </div>
+    </div>
+    <div class="mt-20  p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+      <div class="lg:mt-20 -mt-20 rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-900/3 border-gray-900 lg:flex lg:flex-col
+           lg:justify-center lg:py-32">
+        <div class="mx-auto max-w-xs px-8">
+          <p class="text-base font-semibold text-gray-600">Per Month</p>
+          <p class="mt-6 flex items-baseline justify-center gap-x-2">
+            <span class="text-5xl font-bold tracking-tight text-gray-900">$1499</span>
+            <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
+          </p>
+          <a href="#" class="mt-10 block w-full rounded-md bg-[#f1580c] px-3 py-2 text-center text-sm font-semibold 
+              text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+               focus-visible:outline-indigo-600">Contact Us</a>
+          <p class="mt-6 text-xs leading-5 text-gray-600">Cancel at anytime</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   <!-- FEATURES -->
   <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Our Expertise</p>
-  </div>
-  <div class="mx-6 w-auto overflow-hidden mt-8 sm:mt-20 lg:mt-10 w-auto">
-    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+  <!-- </div> -->
+  <div class="mx-6 xl:w-[95%] lg:w-[90%] md:w-[90%] w-[460px] overflow-hidden mt-8 sm:mt-20 lg:mt-10">
+    <dl class="grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
       <div data-aos="fade-right" class="relative pl-24">
-        <dt class="text-base font-semibold leading-7 text-gray-900">
+        <dt class="text-justify font-semibold leading-7 text-gray-900">
           <div class="absolute left-0 top-0 flex h-20 w-20 items-center justify-center rounded-lg ">
             <img src="tailwind-images/functional.svg" alt="">
           </div>
           Functional
         </dt>
-        <dd class="mt-2 text-base leading-7 text-gray-600">We execute test cases meticulously, verifying that each
+        <dd class="mt-2 text-justify leading-7 text-gray-600">We execute test cases meticulously, verifying that each
           feature and functionality of your software performs as intended. Our testers identify defects, capture
           screenshots, and provide detailed bug reports for efficient issue resolution.</dd>
       </div>
@@ -379,20 +378,20 @@
           </div>
           Security
         </dt>
-        <dd class="mt-2 text-base leading-7 text-gray-600">Our team conducts rigorous Input Validation and Error
+        <dd class="mt-2 text-justify leading-7 text-gray-600">Our team conducts rigorous Input Validation and Error
           Handling Testing to identify potential vulnerabilities and ensure secure error management. Additionally, we
           can employ Session Management, Access Control, and Encryption Testing to enforce strict access controls and
           protect data during storage and transmission.</dd>
       </div>
       <div data-aos="fade-right" class="relative pl-24">
-        <dt class="text-base font-semibold leading-7 text-gray-900">
+        <dt class="text-justify font-semibold leading-7 text-gray-900">
           <div class="absolute left-0 top-0 flex h-20 w-20 items-center justify-center rounded-lg ">
             <img src="tailwind-images/usability1.png" alt="">
 
           </div>
           Usability
         </dt>
-        <dd class="mt-2 text-base leading-7 text-gray-600">We can conduct comprehensive usability testing collecting
+        <dd class="mt-2 text-justify leading-7 text-gray-600">We can conduct comprehensive usability testing collecting
           valuable feedback and observing user interactions. By identifying pain points, bottlenecks, and areas for
           improvement, we help you refine your software to enhance user engagement and satisfaction.</dd>
       </div>
@@ -403,14 +402,14 @@
           </div>
           Automation
         </dt>
-        <dd class="mt-2 text-base leading-7 text-gray-600">Our use of QA automation streamlines the testing process,
+        <dd class="mt-2 text-justify leading-7 text-gray-600">Our use of QA automation streamlines the testing process,
           improving the accuracy and efficiency of each test cycle. This approach allows us to quickly identify and
           address defects, ensuring higher quality outputs and more reliable software for our clients.</dd>
       </div>
     </dl>
   </div>
   <!-- contact section -->
-  <section class="bg-gradient-to-r from-[#F5793B] to-[#f79a6b] lg:w-full w-[520px] " id="contact">
+  <section class="bg-gradient-to-r from-[#F5793B] to-[#f79a6b] lg:w-[100%] xl:w-[100%] md:w-[100%] w-[520px] " id="contact">
     <div class="lg:mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div class="mb-4">
         <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -494,8 +493,8 @@
       </div>
     </div>
   </section>
-  <footer class="h-[50px] py-8">
-    <div class="mx-auto max-w-7xl overflow-hidden px-6  lg:px-8">
+  <footer class="lg:w-[100%] xl:w-[100%] md:w-[100%] w-[520px]">
+    <div class="mx-2 overflow-x-hidden px-6  lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         <div class="pb-6">
           <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Home</a>
@@ -547,7 +546,7 @@
           </svg>
         </a>
       </div>
-      <hr class="mb-4 mt-4 border-[#111111]" />
+      <hr class="mb-4 mx-2  mt-4 border-[#111111]" />
       <p class="bottom-0 mb-0 py-2 text-center text-xs leading-5 text-gray-500">&copy; 2023 Effective QA. All rights
         reserved.</p>
     </div>
